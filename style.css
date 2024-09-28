@@ -1,6 +1,23 @@
 body {
-	margin: 0;
+    font-family:'Helvetica Neue',Helvetica,sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+header {
+    background-color: #007bff; /* Couleur de fond */
+    color: #ffffff;            /* Couleur du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: min-content;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 footer {
@@ -8,10 +25,15 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	text-align: center
+	text-align: center;
 
 }
 
+a hr {
+	width: min-content;
+}
+
 main {
-	margin: 10;
+	margin: 10px;
+    padding: 50px 0px;
 }
