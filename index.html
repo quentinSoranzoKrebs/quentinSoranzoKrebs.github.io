@@ -7,28 +7,58 @@
     </style>
 </head>
 <body>
-<header>
-  <div>
+<header> 
+  <!--div class="rightbarr">
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+  </div>-->
+
+    <div class="menu" id="menu" onclick="toggleDropdown()">
+        <div></div>
+    </div>
+  <div class="title">
     <h2>Quentin Soranzo-Krebs - web page</h2>
   </div>
 </header>
 
-<main>
-	<p>
-	<br>
-	Mail : quentin.soranzokrebs@gmail.com<br>
-	</p>
+<main> 
+  <ul class="leftbarr" id="mainbarr">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div class="mainpage plein" id="mainpage">
+    <p>
+    Mail : quentin.soranzokrebs@gmail.com<br>
+    </p>
+    <p>
+    <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+    <br><br>
+    <a href=https://github.com/quentinSoranzoKrebs/gnome-convert/tree/main>Gnome-Convertion</a><br><br>
+    </p>
+  </div>
 
-	<p>
-	<a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
-
-
-  <br><br>
-
-	<a href=https://github.com/quentinSoranzoKrebs/gnome-convert/tree/main>Gnome-Convertion</a><br><br>
-	</p>
 </main>
 
+
+
 <footer><p><i> Vive Lynx  </i></p></footer>
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("mainbarr");
+    dropdown.classList.toggle("show");
+    var button = document.getElementById("menu");
+    button.classList.toggle('change');
+    var button = document.getElementById("mainpage");
+    button.classList.toggle('plein');
+  }
+  function myFunction(x) {
+    x.classList.toggle("change");
+  } 
+</script>
+
 </body>
 </html>

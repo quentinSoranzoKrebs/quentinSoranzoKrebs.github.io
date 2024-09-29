@@ -13,11 +13,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-	height: min-content;
     position: fixed;
     top: 0%;
     width: 100%;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    /*! box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); */
+    height: auto;
 }
 
 footer {
@@ -34,6 +34,91 @@ a hr {
 }
 
 main {
-	margin: 10px;
-    padding: 50px 0px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 74px 0px 0px;
+}
+
+.mainpage {
+	margin: 0px 270px;
+    transition: margin .4s ease-in-out;
+}
+
+.plein {
+    margin: 0px 10px;
+     transition: margin .6s ease-in-out;
+}
+
+.leftbarr {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #449eff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  left: -249px;
+  transition: all .5s ease-in-out
+}
+
+
+/*.leftbarr:hover {
+    transform: translateX(249px)   
+}*/
+
+.leftbarr li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.leftbarr li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.leftbarr li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.show {
+    transform: translateX(249px)   
+}
+
+.hide {
+    /*display: none;*/
+}
+
+.menu{
+    margin: 1em;
+    width: 40px;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+}
+.menu:after,
+.menu:before,
+.menu div {
+    background-color:black;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .5s ease-in-out;
+}
+
+.change:before {
+    transform: translateY(12px) rotate(135deg);
+}
+.change:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+.change div {
+    transform: scale(0);
 }
