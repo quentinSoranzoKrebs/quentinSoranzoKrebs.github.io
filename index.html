@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quentin Soranzo Krebs - Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quentin Soranzo-Krebs - Page</title>
+	<link rel="stylesheet" href="style.css">
+    </style>
 </head>
 <body>
-    <header>
-        <h2>Quentin Soranzo Krebs</h2>
-        <p>Passionate developer specializing in GNOME desktop applications.</p>
-    </header>
+<header> 
+  <!--div class="rightbarr">
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+     <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+  </div>-->
 
-    <div class="container">
-        <section>
-		
-            <h2>About Me</h2>
-            <p>I am Quentin Soranzo Krebs, an independent developer with a passion for creating intuitive and performant applications for the GNOME desktop. My goal is to make technology accessible to everyone by developing tools that simplify and enhance the user experience.</p>
-        </section>
-
-        <section>
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>FlatConvert</h3>
-                <p><strong>FlatConvert</strong> is my most active and popular project. It is a file conversion tool that allows users to easily convert files between different formats. Whether you need to convert images, videos, or documents, FlatConvert is here to help.</p>
-                <a href="https://gitlab.gnome.org/qsk/flatconvert">
-                    <img src="https://via.placeholder.com/150" alt="FlatConvert">
-                </a>
-                <p><strong>Features:</strong></p>
-                <ul>
-                    <li>Fast and efficient conversion</li>
-                    <li>Intuitive user interface</li>
-                    <li>Support for a wide range of file formats</li>
-                    <li>Coming soon on GNOME Software and via Flatpak</li>
-                </ul>
-                <a href="flatconvert.html">Learn more about FlatConvert</a>
-            </div>
-
-            <div class="project">
-                <h3>Other Projects</h3>
-                <p>In addition to FlatConvert, I have developed several other applications for the GNOME desktop. Here are some of my contributions to the open-source community:</p>
-                <ul>
-                    <li><strong>Project A</strong>: A brief description of Project A.</li>
-                    <li><strong>Project B</strong>: A brief description of Project B.</li>
-                    <li><strong>Project C</strong>: A brief description of Project C.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="contact">
-
-            <ul>
-                <li><strong>Email</strong>: <a href="/cdn-cgi/l/email-protection#a7d4c8d5c6c9ddc8ccd5c2c5d4d6d2c2c9d3cec9e7c0cac6cecb89c4c8ca"><span class="__cf_email__" data-cfemail="64170b16050a1e0b0f160106171511010a100d0a240309050d084a070b09">[email&#160;protected]</span></a></li>
-                <li><strong>GitHub</strong>: <a href="https://github.com/quentinSoranzoKrebs">github.com/quentinSoranzoKrebs</a></li>
-		<li><strong>Gnome GitLab</strong>: <a href="https://gitlab.gnome.org/qsk">gitlab.gnome.org/qsk</a></li>
-            </ul>
-        </section>
+    <div class="menu" id="menu" onclick="toggleDropdown()">
+        <div></div>
     </div>
+  <div class="title">
+    <h2>Quentin Soranzo-Krebs - web page</h2>
+  </div>
+</header>
 
-    <footer>
-        <p>© 2025 Quentin Soranzo Krebs. All rights reserved.</p>
-    </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+<main> 
+  <ul class="leftbarr" id="mainbarr">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div class="mainpage plein" id="mainpage">
+    <p>
+    Mail : quentin.soranzokrebs@gmail.com<br>
+    </p>
+    <p>
+    <a href=https://gitlab.com/soranzokrebsquentin/pacwall>Pac-Wall</a>
+    <br><br>
+    <a href=https://github.com/quentinSoranzoKrebs/gnome-convert/tree/main>Gnome-Convertion</a><br><br>
+    </p>
+  </div>
+
+</main>
+
+
+
+<footer><p><i> Vive Lynx  </i></p></footer>
+
+<script>
+  function toggleDropdown() {
+    var dropdown = document.getElementById("mainbarr");
+    dropdown.classList.toggle("show");
+    var button = document.getElementById("menu");
+    button.classList.toggle('change');
+    var button = document.getElementById("mainpage");
+    button.classList.toggle('plein');
+  }
+  function myFunction(x) {
+    x.classList.toggle("change");
+  } 
+</script>
+
 </body>
 </html>
